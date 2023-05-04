@@ -9,10 +9,5 @@ export default {
     purgeLayersByDefault: true,
     removeDeprecatedGapUtilities: true,
   },
-  purge: {
-    content: [
-      "./src/**/*.svelte",
-    ],
-  },
 }
 
