@@ -5,5 +5,14 @@ export default {
     extend: {},
   },
   plugins: [],
+  future: {
+    purgeLayersByDefault: true,
+    removeDeprecatedGapUtilities: true,
+  },
+  purge: {
+    content: [
+      "./src/**/*.svelte",
+    ],
+  },
 }
 
