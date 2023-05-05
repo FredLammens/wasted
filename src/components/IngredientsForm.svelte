@@ -9,9 +9,9 @@
     }
 </script>
 <form class="my-6" on:submit|preventDefault={handleSubmit}>
-    <div class="flex flex-col text-sm mb-2">
-        <label class="font-bold mb-2 text-gray-800" for="ingredient">Add item</label>
-        <input bind:value={ingredient} class="placeholder:italic placeholder:text-slate-400  appearance-none shadow-sm border border-gray-200 p-2 focus:outline-none focus:border-gray-500 rounded-lg" type="text" name="ingredient" placeholder="insert fridge item">
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+    <div class="relative">
+        <input  bind:value={ingredient} type="search" id="default-search" class="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 focus:outline-none" placeholder="Insert fridge item" required>
+        <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-500 hover:bg-blue-800  focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">+</button>
     </div>
-    <button type="submit" class="w-full shadow-sm rounded bg-blue-500 hover:bg-blue-600 text-white py-2 px-4">Submit</button>
 </form>
